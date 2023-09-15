@@ -7,5 +7,7 @@ driver = Chrome()
 driver.get("https://licindia.in/")
 driver.maximize_window()
 driver.find_element("xpath", "(//a[contains(.,'Login')])[2]").click()
+sleep(2)
 alt = driver.switch_to.alert
-alt.dismiss()
+#alt.dismiss()
+alt.accept()
